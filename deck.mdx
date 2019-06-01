@@ -1,0 +1,83 @@
+import { Head } from 'mdx-deck';
+export { default as theme } from './themes/theme';
+import Profile from './components/image.jsx';
+import { Appear, Image } from '@mdx-deck/components'
+
+<Head>
+  <title>A11y and React, Why its important</title>
+  <meta name='twitter:site' content='@johnnyxbell' />
+  <meta name='twitter:title' content='A11y &amp; React, Why its important?' />
+  <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Open+Sans" rel="stylesheet" />
+</Head>
+
+# Hello :wave:
+
+A11y and React, Why its important?
+
+---
+
+# About Me
+
+<Profile image="./assets/images/profile.png" width={150}/>
+
+  <p>G’day mates, I’m Johnny</p>
+  <Appear>
+    <p>A frontend engineer from Australia.</p>
+    <p>Working with the awesome team at StackShare in San Francisco.</p>
+    <p>Founder of Devs With Disabilities meetup.</p>
+  </Appear>
+
+---
+# Find Me Online
+
+@johnnyxbell
+
+---
+
+<Image
+  src='./assets/images/stickers.jpeg'
+  style={{
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: 'white',
+    backgroundColor: 'black',
+  }}>
+
+</Image>
+
+---
+
+# Whats the % of Americans with a disability?
+
+  <Appear>
+    <p>5%?</p>
+    <p>10%?</p>
+    <p>20%?</p>
+  </Appear>
+
+---
+
+# It's actually now...
+
+<Appear>
+  <h2>Closer to 25%!</h2>
+  <p>one in 4 people</p>
+</Appear>
+
+---
+
+# :scream: Crazy Right?
+
+---
+
+# What is A11y?
+
+  <Appear>
+    <p>A11y = accesibility</p>
+    <p>a(ccesibilit)y 11 characters so we say a11y</p>
+  </Appear>
+
+---
+
+# The end
