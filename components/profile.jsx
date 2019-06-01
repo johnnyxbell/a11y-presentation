@@ -5,10 +5,10 @@ const Img = styled.img`
  border-radius: 150px;
  border: 5px solid white;
 `
-const Image = ({ image, width }) => {
+const Profile = ({ image, width }) => {
   return (
     <Img width={width} src={image} alt={image} />
   )
 }
 
-export default Image;
+export default Profile;
