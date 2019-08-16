@@ -18,7 +18,7 @@ A11y and React, Why its important?
 
 # About Me
 
-<Profile image="./assets/images/profile.png" width={150}/>
+<Profile image={require("file-loader!./assets/images/profile.png")} width={150}/>
 
   <p>G’day mates, I’m Johnny</p>
   <Appear>
@@ -36,7 +36,7 @@ A11y and React, Why its important?
 ---
 
 <Image
-  src='./assets/images/stickers.jpeg'
+  src={require("file-loader!./assets/images/stickers.jpeg")}
   style={{
     display: 'flex',
     alignItems: 'center',
@@ -91,7 +91,7 @@ A11y and React, Why its important?
 
 # Dominos
 
-<img width="1200px" src="./assets/images/dominos.png" />
+<img width="1200px" src={require("file-loader!./assets/images/dominos.png")} />
 
 <Appear>
   <p>😭😭😭😭😭😭😭😭😭😭😭</p>
@@ -102,7 +102,7 @@ A11y and React, Why its important?
 
 # Who likes Audience Participation ?
 
-![alt text](./assets/images/audience.gif)
+<img src={require("file-loader!./assets/images/audience.gif")} />
 
 <Appear>
   <p>(only a tiny bit) 🤣</p>
@@ -149,7 +149,7 @@ ___
 
 # Who uses this daily or weekly?
 
-<img width="900px" src="./assets/images/chromeperformace.jpg" />
+<img width="900px" src={require("file-loader!./assets/images/chromeperformace.jpg")} />
 
 <Appear>
   <p>Most of us right?</p>
@@ -159,13 +159,13 @@ ___
 
 # So lets take a closer look at this...
 
-<img width="700px" src="./assets/images/chromeperformace.jpg" />
+<img width="700px"src={require("file-loader!./assets/images/chromeperformace.jpg")} />
 
 <p>Whats wrong here?</p>
 
 ___
 
-<img width="900px" src="./assets/images/chromehighlight.jpg" />
+<img width="900px" src={require("file-loader!./assets/images/chromehighlight.jpg")} />
 
 ___
 
@@ -173,7 +173,7 @@ ___
 
 <Appear>
   <div>
-    <img width="1000px" src="./assets/images/code.png" />
+    <img width="1000px" src={require("file-loader!./assets/images/code.png")} />
   </div>
 </Appear>
 
@@ -200,9 +200,10 @@ ___
 ---
 
 # Lets give it a go...
-
-<p>Demo Time</p>
-<p>I was going to do this live... buuuut</p>
+<Appear>
+  <p>Demo Time</p>
+  <p>I was going to do this live... buuuut</p>
+</Appear>
 
 ---
 
@@ -261,7 +262,7 @@ ___
 
 # We are hiring
 
-<img src="./assets/images/stackshare.png" />
+<img src={require("file-loader!./assets/images/stackshare.png")} />
 
 ---
 

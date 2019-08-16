@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "file-loader": "^4.2.0",
     "mdx-deck": "^2.3.2"
   },
   "devDependencies": {},
