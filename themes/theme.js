@@ -6,12 +6,12 @@ export default {
   colors: {
     text: 'white',
     background: 'black',
-    link: '#0ff',
+    link: '#ccc'
   },
   h1: {
     fontSize: '75px'
   },
   p: {
     fontSize: '35px'
-  },
-}
+  }
+};
