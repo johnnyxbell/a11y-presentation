@@ -31,7 +31,7 @@ A11y and React, Why its important?
 ---
 # Find Me Online
 
-@johnnyxbell
+<a href="https://www.twitter.com/johnnyxbell" target="_blank" style={{textDecoration: 'none'}}>@johnnyxbell</a>
 
 ---
 
@@ -207,7 +207,18 @@ ___
 
 ---
 
-# VIDEO
+<div
+  dangerouslySetInnerHTML={{
+    __html: `
+      <video
+        style="max-width: 100%"
+        controls
+        autoplay
+        src=${require("file-loader!./assets/videos/dwd.mp4")}
+      />
+    `,
+  }}
+/>
 
 ---
 
