@@ -29,6 +29,7 @@ A11y and React, Why its important?
   </Appear>
 
 ---
+
 # Find Me Online
 
 <a href="https://www.twitter.com/johnnyxbell" target="_blank" style={{textDecoration: 'none'}}>@johnnyxbell</a>
@@ -129,7 +130,6 @@ A11y and React, Why its important?
 
 <a style={{fontSize: 15}}href="https://www.w3.org/WAI/business-case/">source</a>
 
-
 ---
 
 # :scream: Crazy Right?
@@ -145,7 +145,7 @@ A11y and React, Why its important?
   <p>I'd like to change that thought</p>
 </Appear>
 
-___
+---
 
 # Who uses this daily or weekly?
 
@@ -155,7 +155,7 @@ ___
   <p>Most of us right?</p>
 </Appear>
 
-___
+---
 
 # So lets take a closer look at this...
 
@@ -163,11 +163,17 @@ ___
 
 <p>Whats wrong here?</p>
 
-___
+---
 
 <img width="900px" src={require("file-loader!./assets/images/chromehighlight.jpg")} />
 
-___
+---
+
+# Do we have any color blind people here?
+
+<p>My friend Vu Tran over at Dropbox helped me with this one.</p>
+
+---
 
 # Lets put this in a coding perspective
 
@@ -177,11 +183,11 @@ ___
   </div>
 </Appear>
 
-___
+---
 
 # Confusing Right? 🤔
 
-___
+---
 
 # No Mouse
 
@@ -191,7 +197,7 @@ ___
   <p>Demo Time</p>
 </Appear>
 
-___
+---
 
 # Screen Readers
 
@@ -214,7 +220,7 @@ ___
         style="max-width: 100%"
         controls
         autoplay
-        src=${require("file-loader!./assets/videos/dwd.mp4")}
+        src=${require("file-loader!./assets/videos/dwd-no-a11y.mp4")}
       />
     `,
   }}
@@ -224,17 +230,37 @@ ___
 
 # That was difficult wasn't it.
 
-<p>P.S. - I'll teach you how to fix this same site later</p>
+<Appear>
+  <p>Now let's see how this looks with a little bit of a11y</p>
+</Appear>
 
 ---
 
+<div
+  dangerouslySetInnerHTML={{
+    __html: `
+      <video
+        style="max-width: 100%"
+        controls
+        autoplay
+        src=${require("file-loader!./assets/videos/dwd.mp4")}
+      />
+    `,
+  }}
+/>
+
+---
+
+# Much easier...
+
+---
 
 # Just the surface
 
 <p>Disabilities come in all shapes and sizes</p>
 <p>I've shown just a few</p>
 
-___
+---
 
 # What is A11y?
 
@@ -249,7 +275,7 @@ ___
 
 <p>Accesibility is about making browsing the web easy as possible for everyone</p>
 
-___
+---
 
 # Why should you care?
 
@@ -257,7 +283,7 @@ ___
 <p>Affect everyone different online</p>
 <p>We can make a big impact, with a small amount of effort (to get started)</p>
 
-___
+---
 
 # How can I test my site for A11y issues?
 <Appear>
