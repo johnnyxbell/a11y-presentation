@@ -1,18 +1,23 @@
 import { Head } from 'mdx-deck';
 export { default as theme } from './themes/theme';
 import Profile from './components/profile.jsx';
-import { Appear, Image } from '@mdx-deck/components'
+import { Appear, Image, Notes} from '@mdx-deck/components'
 
 <Head>
-  <title>A11y and React, Why its important</title>
+  <title>A11y and React, Why it's important</title>
   <meta name='twitter:site' content='@johnnyxbell' />
   <meta name='twitter:title' content='A11y &amp; React, Why its important?' />
   <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Open+Sans" rel="stylesheet" />
 </Head>
 
-# Hello :wave:
+# Hello 👋
 
-A11y and React, Why its important?
+A11y and React, Why it's important?
+
+<Notes>
+  <p>- thank  chantastic for doing a fantastic job</p>
+  <p>- a11y might not be the most interesting topic</p>
+</Notes>
 
 ---
 
@@ -20,13 +25,13 @@ A11y and React, Why its important?
 
 <Profile image={require("file-loader!./assets/images/profile.png")} width={150}/>
 
-  <p>G’day mates, I’m Johnny</p>
-  <Appear>
-    <p>A frontend engineer from Australia.</p>
-    <p>Working with the awesome team at StackShare in San Francisco.</p>
-    <p>Founder of Devs With Disabilities meetup.</p>
-    <p>Missing left arm from elbow down.</p>
-  </Appear>
+<p>G’day mates, I’m Johnny</p>
+<Appear>
+  <p>A frontend engineer from Australia.</p>
+  <p>Working with the awesome team at StackShare in San Francisco.</p>
+  <p>Founder of Devs With Disabilities meetup.</p>
+  <p>Missing left arm from elbow down.</p>
+</Appear>
 
 ---
 
@@ -45,7 +50,6 @@ A11y and React, Why its important?
     color: 'white',
     backgroundColor: 'black',
   }}>
-
 </Image>
 
 ---
@@ -53,7 +57,7 @@ A11y and React, Why its important?
 # Soooooo... a few questions
 <Appear>
   <p>Do we have any fellow Aussies here? 🦘🇦🇺</p>
-  <p>Whos been to React Rally before?</p>
+  <p>Who's been to React Rally before?</p>
   <p>How long have you been using React?</p>
 </Appear>
 
@@ -61,53 +65,62 @@ A11y and React, Why its important?
 
 # What am I going to chat about today?
 <Appear>
-  <p>Disabilities</p>
-  <p>What is a11y & how to test for accesibility</p>
-  <p>Getting started with accesibility and React</p>
+  <p>What is a11y?</p>
+  <p>Disabilities.</p>
+  <p>How to test for accesibility?</p>
+  <p>Getting started with accesibility and React.</p>
 </Appear>
 
 ---
 
-# Before I get started lets talk about disabilities in the real world.
+# What is a11y?
 
 <Appear>
-  <p>We have wheelchair ramps</p>
-  <p>Seats on trains / buses</p>
-  <p>Braille</p>
-  <p>Disability parking</p>
-  <p>Pre-boarding on planes</p>
-  <p>... It goes on</p>
+  <p>A11y = accesibility.</p>
+  <p>a(ccesibilit)y 11 characters so we say a11y.</p>
+</Appear>
+
+---
+
+# But what is it?
+
+<Appear>
+  <p>Accesibility is about making browsing the web easy as possible for everyone.</p>
+</Appear>
+
+---
+
+# Disabilities in the real world.
+
+<Appear>
+  <p>We have wheelchair ramps.</p>
+  <p>Seats on trains / buses.</p>
+  <p>Braille.</p>
+  <p>Disability parking.</p>
+  <p>Pre-boarding on planes.</p>
+  <p>Accommodations for students ar school.</p>
+  <p>...It goes on.</p>
 </Appear>
 
 ---
 
 # Why should the digital world be different?
 
+<p>🤷🤷🤷🤷🤷</p>
+
 <Appear>
-  <p>🤷🤷🤷🤷🤷</p>
-  <p>It shouldn't 🧐</p>
+  <p>It shouldn't 🧐.</p>
 </Appear>
 
 ---
 
 # Dominos
 
-<img width="1200px" src={require("file-loader!./assets/images/dominos.png")} />
+<img width="600px" src={require("file-loader!./assets/images/dominos.png")} />
 
-<Appear>
-  <p>😭😭😭😭😭😭😭😭😭😭😭</p>
-</Appear>
-<a style={{fontSize: 15}}href="https://www.theverge.com/2019/8/1/20750913/dominos-pizza-website-accessible-blind-supreme-court-lawsuit">source</a>
+<p>😭😭😭😭😭😭😭😭😭😭😭</p>
 
----
-
-# Who likes Audience Participation ?
-
-<img src={require("file-loader!./assets/images/audience.gif")} />
-
-<Appear>
-  <p>(only a tiny bit) 🤣</p>
-</Appear>
+<a style={{fontSize: 15}} href="https://www.theverge.com/2019/8/1/20750913/dominos-pizza-website-accessible-blind-supreme-court-lawsuit">source</a>
 
 ---
 
@@ -124,32 +137,17 @@ A11y and React, Why its important?
 # It's actually now...
 
 <Appear>
-  <h3>Closer to 25%!</h3>
-  <p>one in 4 people</p>
+  <p>Closer to 25%!</p>
+  <p>One in 4 people</p>
 </Appear>
 
 <a style={{fontSize: 15}}href="https://www.w3.org/WAI/business-case/">source</a>
 
 ---
 
-# :scream: Crazy Right?
-
----
-
-# Whats the first question someone asks me in a interview?
-
-<Appear>
-  <p>How do you type with 1 hand?</p>
-  <p>you guessed correctly</p>
-  <p>answer : With 1 hand....</p>
-  <p>I'd like to change that thought</p>
-</Appear>
-
----
-
 # Who uses this daily or weekly?
 
-<img width="900px" src={require("file-loader!./assets/images/chromeperformace.jpg")} />
+<img width="500px" src={require("file-loader!./assets/images/chromeperformace.jpg")} />
 
 <Appear>
   <p>Most of us right?</p>
@@ -157,35 +155,37 @@ A11y and React, Why its important?
 
 ---
 
-# So lets take a closer look at this...
+# So let's take a closer look at this...
 
-<img width="700px"src={require("file-loader!./assets/images/chromeperformace.jpg")} />
+<img width="500px"src={require("file-loader!./assets/images/chromeperformace.jpg")} />
 
-<p>Whats wrong here?</p>
-
----
-
-<img width="900px" src={require("file-loader!./assets/images/chromehighlight.jpg")} />
+<p>What's wrong here?</p>
 
 ---
 
-# Do we have any color blind people here?
+<img width="600px" src={require("file-loader!./assets/images/chromehighlight.jpg")} />
+
+---
 
 <p>My friend Vu Tran over at Dropbox helped me with this one.</p>
 
 ---
 
-# Lets put this in a coding perspective
+<p>Why?</p>
+
+---
+
+# Let's put this in a coding perspective
 
 <Appear>
   <div>
-    <img width="1000px" src={require("file-loader!./assets/images/code.png")} />
+    <img width="700px" src={require("file-loader!./assets/images/code.png")} />
   </div>
 </Appear>
 
 ---
 
-# Confusing Right? 🤔
+# 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
 
 ---
 
@@ -194,7 +194,7 @@ A11y and React, Why its important?
 <p>We take mouse for granted, but say you can't use one?</p>
 
 <Appear>
-  <p>Demo Time</p>
+  <p>Demo Time.</p>
 </Appear>
 
 ---
@@ -205,10 +205,10 @@ A11y and React, Why its important?
 
 ---
 
-# Lets give it a go...
+# Let's give it a go...
 <Appear>
-  <p>Demo Time</p>
-  <p>I was going to do this live... buuuut</p>
+  <p>Demo Time.</p>
+  <p>I was going to do this live... buuuut.</p>
 </Appear>
 
 ---
@@ -219,7 +219,6 @@ A11y and React, Why its important?
       <video
         style="max-width: 100%"
         controls
-        autoplay
         src=${require("file-loader!./assets/videos/dwd-no-a11y.mp4")}
       />
     `,
@@ -228,10 +227,10 @@ A11y and React, Why its important?
 
 ---
 
-# That was difficult wasn't it.
+# That experience could be improved
 
 <Appear>
-  <p>Now let's see how this looks with a little bit of a11y</p>
+  <p>Now let's see how this looks with a little bit of a11y.</p>
 </Appear>
 
 ---
@@ -242,7 +241,6 @@ A11y and React, Why its important?
       <video
         style="max-width: 100%"
         controls
-        autoplay
         src=${require("file-loader!./assets/videos/dwd.mp4")}
       />
     `,
@@ -251,56 +249,39 @@ A11y and React, Why its important?
 
 ---
 
-# Much easier...
+# Much easier
 
 ---
 
 # Just the surface
 
-<p>Disabilities come in all shapes and sizes</p>
-<p>I've shown just a few</p>
+<p>Disabilities come in all shapes and sizes.</p>
+<p>I've shown just a few.</p>
 
 ---
 
-# What is A11y?
-
-<Appear>
-  <p>A11y = accesibility</p>
-  <p>a(ccesibilit)y 11 characters so we say a11y</p>
-</Appear>
-
----
-
-# Cool, but what actually is accesibility in 1 sentence?
-
-<p>Accesibility is about making browsing the web easy as possible for everyone</p>
-
----
-
-# Why should you care?
-
-<p>Disabilities come in all shapes and sizes</p>
-<p>Affect everyone different online</p>
-<p>We can make a big impact, with a small amount of effort (to get started)</p>
-
----
-
-# How can I test my site for A11y issues?
+# How can I test my site for a11y issues?
 <Appear>
   <p>Demo Time</p>
 </Appear>
 
 ---
 
-# Live Coding...
-
-<p>😨 Bad Idea? Probably, but lets do it anyway</p>
-
----
-
 # We are hiring
 
 <img src={require("file-loader!./assets/images/stackshare.png")} />
+
+---
+
+# Shameless Plug
+
+<img width={500} src={require("file-loader!./assets/images/dwd.png")} />
+
+---
+
+# Thank you
+
+<p>My wife</p>
 
 ---
 

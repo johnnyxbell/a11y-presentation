@@ -9,9 +9,9 @@ export default {
     link: '#ccc'
   },
   h1: {
-    fontSize: '75px'
+    fontSize: '70px'
   },
   p: {
-    fontSize: '35px'
+    fontSize: '45px'
   }
 };
